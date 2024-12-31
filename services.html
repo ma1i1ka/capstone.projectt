@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Услуги | FutureLib</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+    <style>
+        .hero-section {
+            background: url('img/services-banner.jpg') no-repeat center center/cover;
+            color: black; /* Изменяем цвет текста на черный */
+            text-align: center;
+            padding: 4rem 1rem;
+            animation: fadeIn 2s;
+            position: relative;
+        }
+        .hero-section h1 {
+            font-size: 3rem; /* Размер заголовка */
+            text-shadow: 2px 2px 5px rgba(255, 255, 255, 0.7); /* Тень для заголовка */
+            font-weight: bold; /* Жирный текст для заголовка */
+        }
+        .hero-section p {
+            font-size: 1.25rem; /* Размер текста */
+            line-height: 1.5; /* Междустрочный интервал */
+            margin-top: 1rem; /* Отступ сверху для текста */
+            background: rgba(255, 255, 255, 0.8); /* Полупрозрачный фон для текста */
+            padding: 1rem; /* Внутренний отступ */
+            border-radius: 10px; /* Закругленные углы */
+            display: inline-block; /* Чтобы фон соответствовал тексту */
+        }
+        .service-card {
+            border: none;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .service-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+        }
+        .icon-container {
+            font-size: 3rem;
+            color: #6c757d;
+        }
+        .btn-custom {
+            color: white;
+            background-color: #6c757d;
+            border: none;
+            border-radius: 25px;
+            padding: 0.5rem 1.5rem;
+            transition: background-color 0.3s;
+        }
+        .btn-custom:hover {
+            background-color: #5a6268;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Главная</a></li>
+                    <li class="nav-item"><a class="nav-link" href="aboutus.html">О компании</a></li>
+                    <li class="nav-item"><a class="nav-link" href="review.html">Обзор</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="services.html">Услуги</a></li>
+                    <li class="nav-item"><a class="nav-link" href="events.html">Мероприятия</a></li>
+                </ul>
+            </div>
+            <a href="personal.html" class="btn btn-outline-light rounded-circle">👤</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <h1 class="display-4">Наши услуги</h1>
+        <p class="lead">Откройте новые горизонты вместе с FutureLib!</p>
+        <p>Мы предлагаем широкий выбор услуг, чтобы удовлетворить ваши потребности в обучении и чтении. Исследуйте наш ассортимент и найдите то, что вам нужно!</p>
+    </section>
+
+   <!-- Services Section -->
+   <section id="services" class="py-5">
+    <div class="container">
+        <div class="row gy-4">
+            <div class="col-md-6 col-lg-4">
+                <div class="card service-card">
+                    <div class="card-body text-center">
+                        <div class="icon-container mb-3"><i class="fas fa-book-open"></i></div>
+                        <h5 class="card-title">Электронные книги</h5>
+                        <p class="card-text">Доступ к тысячам книг в цифровом формате на любом устройстве.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+                <div class="card service-card">
+                    <div class="card-body text-center">
+                        <div class="icon-container mb-3"><i class="fas fa-headphones"></i></div>
+                        <h5 class="card-title">Аудиокниги</h5>
+                        <p class="card-text">Слушайте ваши любимые книги где угодно.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+                <div class="card service-card">
+                    <div class="card-body text-center">
+                        <div class="icon-container mb-3"><i class="fas fa-vr-cardboard"></i></div>
+                        <h5 class="card-title">AR/VR обучение</h5>
+                        <p class="card-text">Изучайте материалы через захватывающий опыт виртуальной реальности.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+                <div class="card service-card">
+                    <div class="card-body text-center">
+                        <div class="icon-container mb-3"><i class="fas fa-users"></i></div>
+                        <h5 class="card-title">Литературные клубы</h5>
+                        <p class="card-text">Присоединяйтесь к обсуждениям и встречам с единомышленниками.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+                <div class="card service-card">
+                    <div class="card-body text-center">
+                        <div class="icon-container mb-3"><i class="fas fa-robot"></i></div>
+                        <h5 class="card-title">Персонализированные рекомендации</h5>
+                        <p class="card-text">Искусственный интеллект поможет выбрать книги по вашим предпочтениям.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+                <div class="card service-card">
+                    <div class="card-body text-center">
+                        <div class="icon-container mb-3"><i class="fas fa-desktop"></i></div>
+                        <h5 class="card-title">Образовательные курсы</h5>
+                        <p class="card-text">Профессиональные онлайн-курсы по различным дисциплинам.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+                <div class="card service-card">
+                    <div class="card-body text-center">
+                        <div class="icon-container mb-3"><i class="fas fa-network-wired"></i></div>
+                        <h5 class="card-title">Сетевые семинары</h5>
+                        <p class="card-text">Онлайн-семинары и вебинары для профессионального роста.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer class="py-4 bg-dark text-white">
+    <div class="container d-flex flex-wrap justify-content-between">
+        <div class="contact-details">
+            <p><strong>Адрес:</strong> Москва, ул. Примерная, 123</p>
+            <p><strong>Email:</strong> info@futurelib.ru</p>
+            <p><strong>Телефон:</strong> +7 (999) 123-45-67</p>
+            <p><strong>Время работы:</strong> Пн-Пт 9:00 - 20:00</p>
+        </div>
+        <div class="map-container">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3151.8354345097315!2d144.95565131531592!3d-37.817323979751604!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad642af0f11fd81%3A0xf577aa204f0b38af!2sLibrary!5e0!3m2!1sen!2sau!4v1639997246415!5m2!1sen!2sau" width="300" height="200" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+    </div>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/js/all.min.js"></script>
+</body>
+</html>

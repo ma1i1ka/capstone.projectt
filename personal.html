@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Регистрация</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #f8f9fa;
+            font-family: Arial, sans-serif;
+        }
+        .navbar {
+            background-color: #343a40;
+        }
+        .navbar-nav .nav-link {
+            color: white;
+        }
+        .navbar-nav .nav-link:hover {
+            color: #adb5bd;
+        }
+        .header {
+            text-align: center;
+            margin: 2rem 0;
+        }
+        .header h1 {
+            font-size: 2.5rem;
+            color: #495057;
+        }
+        .registration-section {
+            margin: 2rem auto;
+            padding: 2rem;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+            max-width: 500px;
+        }
+        .btn-dark-custom {
+            background-color: #343a40;
+            border-color: #343a40;
+            color: white;
+        }
+        .btn-dark-custom:hover {
+            background-color: #495057;
+            border-color: #495057;
+        }
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">FutureLib</a>
+            
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Главная</a></li>
+                    <li class="nav-item"><a class="nav-link" href="aboutus.html">О компании</a></li>
+                    <li class="nav-item"><a class="nav-link" href="review.html">Обзор</a></li>
+                    <li class="nav-item"><a class="nav-link" href="services.html">Услуги</a></li>
+                    <li class="nav-item"><a class="nav-link" href="events.html">Мероприятия</a></li>
+                </ul>
+            </div>
+            <a href="personal.html" class="btn btn-outline-light rounded-circle">👤</a>
+        </div>
+    </nav>
+
+    <!-- Header -->
+    <div class="header">
+        <h1>Личный кабинет</h1>
+        <p>Создайте учетную запись, чтобы начать пользоваться нашими услугами!</p>
+    </div>
+
+    <!-- Registration Form -->
+    <div class="container registration-section">
+        <h4>Форма регистрации</h4>
+        <form>
+            <div class="form-group">
+                <label for="register-name">Имя</label>
+                <input type="text" class="form-control" id="register-name" placeholder="Введите ваше имя" required>
+            </div>
+            <div class="form-group">
+                <label for="register-email">Email</label>
+                <input type="email" class="form-control" id="register-email" placeholder="Введите ваш email" required>
+            </div>
+            <div class="form-group">
+                <label for="register-password">Пароль</label>
+                <input type="password" class="form-control" id="register-password" placeholder="Введите пароль" required>
+            </div>
+            <div class="form-group">
+                <label for="confirm-password">Подтвердите пароль</label>
+                <input type="password" class="form-control" id="confirm-password" placeholder="Подтвердите пароль" required>
+            </div>
+            <div class="form-group text-center">
+                <button type="submit" class="btn btn-dark-custom">Зарегистрироваться</button>
+            </div>
+        </form>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
